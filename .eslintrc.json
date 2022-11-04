@@ -13,8 +13,48 @@
             "allow": [],
             "depConstraints": [
               {
-                "sourceTag": "*",
-                "onlyDependOnLibsWithTags": ["*"]
+                "sourceTag": "scope:app",
+                "onlyDependOnLibsWithTags": ["type:shell"]
+              },
+              {
+                "sourceTag": "scope:catalog",
+                "onlyDependOnLibsWithTags": ["scope:catalog", "scope:shared"]
+              },
+              {
+                "sourceTag": "scope:shared",
+                "onlyDependOnLibsWithTags": ["scope:shared"]
+              },
+              {
+                "sourceTag": "scope:booking",
+                "onlyDependOnLibsWithTags": [
+                  "scope:booking",
+                  "scope:shared",
+                  "name:catalog-api"
+                ]
+              },
+              {
+                "sourceTag": "type:shell",
+                "onlyDependOnLibsWithTags": ["type:feature", "type:util"]
+              },
+              {
+                "sourceTag": "type:feature",
+                "onlyDependOnLibsWithTags": ["type:data-access", "type:util"]
+              },
+              {
+                "sourceTag": "type:api",
+                "onlyDependOnLibsWithTags": ["type:data-access", "type:util"]
+              },
+              {
+                "sourceTag": "type:util",
+                "onlyDependOnLibsWithTags": ["type:util"]
+              },
+              {
+                "sourceTag": "domain:booking",
+                "onlyDependOnLibsWithTags": ["domain:booking", "domain:shared"]
+              },
+              {
+                "sourceTag": "domain:boarding",
+                "onlyDependOnLibsWithTags": ["domain:boarding", "domain:shared"]
               }
             ]
           }

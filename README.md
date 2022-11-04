@@ -1,0 +1,1 @@
+## custom implementation of the sample application from the book **Micro Frontends and Moduliths with Angular** by Manfred Steyer

@@ -14,7 +14,22 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@e-proc/boarding/domain": ["libs/boarding/domain/src/index.ts"],
+      "@e-proc/boarding/feature-manage": [
+        "libs/boarding/feature-manage/src/index.ts"
+      ],
+      "@e-proc/booking/domain": ["libs/booking/domain/src/index.ts"],
+      "@e-proc/booking/feature-cancel": [
+        "libs/booking/feature-cancel/src/index.ts"
+      ],
+      "@e-proc/booking/feature-search": [
+        "libs/booking/feature-search/src/index.ts"
+      ],
+      "@e-proc/catalog/feature-request-product": [
+        "libs/catalog/feature-request-product/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
